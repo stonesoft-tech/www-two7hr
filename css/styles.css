@@ -36,13 +36,14 @@
 .dark-pink-section,
 .dark-pink-section p {
   background-color: var(--DarkPink);
-  color:white;
+  color:var(--DarkBlue);
 }
 
 .medium-pink-section,
 .medium-pink-section p {
   background-color: var(--MediumPink);
-  color: var(--DarkBlue);
+  /* color: var(--DarkBlue); */
+  color: #fff;
 }
 
 .light-pink-section,
@@ -51,17 +52,25 @@
   color: var(--DarkBlue);
 }
 
+img.service-icons {
+  width: 160px;
+  padding: 7%;
+}
+
 #header {
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: var(--LightPink);
-  /* background-color: #fff; */
+  /* background-color: var(--LightPink); */
+  background-color: #fff;
   color: var(--DarkBlue);
 }
 
 .headline-section {
   background-color: var(--MediumPink);
-  color: var(--DarkBlue);
+  /* color: var(--DarkBlue); */
+  color: #fff;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .headline-image {
@@ -73,8 +82,22 @@
   /* padding-left: 30%; */
   padding: 5%;
   /* background-color: #white; */
-  color: #fff;
-  background-image: url("../images/people.png");
+  /* color: #fff; */
+  /* opacity: 0.5; */
+  color: var(--DarkBlue);
+  background-image: url("../images/emma-claude-home.png");
+  background-size: 100%;
+
+}
+
+.about-image-section {
+  /* padding-left: 30%; */
+  padding: 5%;
+  /* background-color: #white; */
+  /* color: #fff; */
+  /* opacity: 0.5; */
+  color: var(--DarkBlue);
+  background-image: url("../images/emma-claude-about.png");
   background-size: 100%;
 
 }
@@ -90,8 +113,14 @@
 }
 
 body {
-  font-family: 'Prompt', sans-serif;
+  /* font-family: 'Prompt', sans-serif; */
+  /* font-family: 'Spartan', sans-serif; */
+  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Mulish', sans-serif; */
+  font-weight: 300;
   text-align: center;
+
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -107,6 +136,7 @@ h2 {
 .big-heading {
   font-weight: 600;
   padding: 5% 0;
+  opacity: 1;
 }
 
 h3 {
@@ -131,7 +161,23 @@ li {
    list-style-type: none;
    text-align: center;
    color: #8f8f8f;
-   font-size: 0.9rem;
+   /* font-size: 0.9rem; */
+}
+
+.btn-light-pink {
+  background-color: var(--LightPink);
+  color: white;
+  border-radius: 5px;
+  padding: 1% 8%;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+.btn-light-pink:hover {
+  background-color: white;
+  border: 1px solid var(--LightPink);
+  color: var(--LightPink);
+  text-decoration: none;
 }
 
 .btn-pink {
@@ -154,7 +200,7 @@ li {
   background-color: #fff;
   color: var(--MediumPink);
   border-radius: 5px;
-  padding: 1% 8%;
+  /* padding: 5% 8%; */
   border: 1px solid var(--MediumPink);
   text-decoration: none;
 }
@@ -193,12 +239,13 @@ li {
 /* Navigation Bar */
 
 .home-logo {
-  width: 200px;
+  /* width: 200px; */
   height: auto;
 }
 
 .logo {
-  width: 150px;
+  padding: 5%;
+  /* width: 200px; */
   height: auto;
 }
 
@@ -218,18 +265,18 @@ li {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   color: var(--DarkBlue);
 }
 .nav-link:hover {
   /* color: var(--DarkPink); */
-  color: #fff;
+  color: var(--MediumPink);
 }
 
 .nav-link-active {
     /* color: var(--DarkPink); */
-      color: #fff;
+      color: var(--MediumPink);
     border-bottom: 3px solid var(--DarkBlue);
 }
 
@@ -283,7 +330,7 @@ li {
 }
 .feature-box {
 
-  padding: 5%;
+  /* padding: 5%; */
 }
 
 /* Testimonial Section */
@@ -304,7 +351,7 @@ li {
 }
 
 .testimonial-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   /* color: var(--DarkBlue); */
 }
@@ -385,4 +432,42 @@ form {
 
 label.form-label {
   color: var(--DarkBlue);
+}
+
+img.stonesoft-image {
+  width: 150px;
+}
+
+.fade-in-text {
+
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
