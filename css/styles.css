@@ -69,8 +69,8 @@ img.service-icons {
   background-color: var(--MediumPink);
   /* color: var(--DarkBlue); */
   color: #fff;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .headline-image {
@@ -136,6 +136,13 @@ h2 {
 .big-heading {
   font-weight: 600;
   padding: 5% 0;
+  opacity: 1;
+}
+
+.about-heading {
+  font-weight: 600;
+  padding-top: 20%;
+  /* padding-bottom: 2% */
   opacity: 1;
 }
 
@@ -440,11 +447,11 @@ img.stonesoft-image {
 
 .fade-in-text {
 
-  animation: fadeIn linear 3s;
-  -webkit-animation: fadeIn linear 3s;
-  -moz-animation: fadeIn linear 3s;
-  -o-animation: fadeIn linear 3s;
-  -ms-animation: fadeIn linear 3s;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
 }
 
 @keyframes fadeIn {
