@@ -440,11 +440,11 @@ img.stonesoft-image {
 
 .fade-in-text {
 
-  animation: fadeIn linear 1s;
-  -webkit-animation: fadeIn linear 1s;
-  -moz-animation: fadeIn linear 1s;
-  -o-animation: fadeIn linear 1s;
-  -ms-animation: fadeIn linear 1s;
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
 }
 
 @keyframes fadeIn {
