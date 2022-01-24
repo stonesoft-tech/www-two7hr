@@ -9,21 +9,21 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: inherit;
 }
 
 h3 {
   color: var(--DarkBlue);
-  font-size:1.1rem;
+  font-size:1.3rem;
 }
 
 h4 {
@@ -56,7 +56,7 @@ label.form-label {
 
 /* Containers */
 .container-fluid {
-  padding: 3% 10%;
+  padding: 3% 15%;
 }
 
 .container-centre {
@@ -72,10 +72,9 @@ label.form-label {
 }
 
 /* Navbar */
-img.logo {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  width: 120px;
+.logo {
+  padding: 5%;
+  height: auto;
 }
 
 .nav-link {
@@ -101,8 +100,6 @@ img.logo {
 /* Sections */
 .dark-pink-section,
 .dark-pink-section p {
-  padding-top: 5%;
-  padding-bottom: 5%;
   background-color: var(--DarkPink);
   color: #fff;
 }
@@ -114,7 +111,6 @@ img.logo {
 }
 
 .white-section {
-  padding-top: 5%;
   background-color: #fff;
   color: var(--DarkPink);
 }
@@ -123,10 +119,7 @@ img.logo {
   padding: 5%;
   color: var(--DarkBlue);
   background-image: url("../images/emma-claude-home.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* width: 100%; */
-  /* height: 100%; */
+  background-size: 100%;
 }
 
 .about-image-section {
@@ -134,7 +127,6 @@ img.logo {
   color: var(--DarkBlue);
   background-image: url("../images/emma-claude-about.png");
   background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 .service-column {
@@ -153,8 +145,7 @@ img.logo {
 
 .headline-heading {
   font-weight: 600;
-  padding: 0 3%;
-  /* font-size: 1.2rem; */
+  padding: 0 15%;
 }
 
 .about-heading {
@@ -163,12 +154,7 @@ img.logo {
 }
 
 .testimonial-text {
-  /* font-size: 1.2rem; */
-  line-height: 1.5;
-}
-
-.footer-text {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -287,73 +273,4 @@ img.stonesoft-image {
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
-}
-
-/* ------ RESPONSIVE CSS ------- */
-
-/* Landscape Phones */
-@media (min-width:576px) {
-
-  body {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 1.1rem;
-  }
-
-  /* Navbar */
-  img.logo {
-    padding: 5%;
-    width: auto;
-  }
-
-  /* Containers */
-  .container-fluid {
-    padding: 3% 15%;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    color: inherit;
-  }
-
-  h3 {
-    color: var(--DarkBlue);
-    font-size:1.3rem;
-  }
-}
-
-/* Desktop, iPad Pro and above*/
-@media (min-width: 992px) {
-
-  body {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  /* Navbar */
-  img.logo {
-    padding: 5%;
-    width: auto;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-    color: inherit;
-  }
-
-  h3 {
-    color: var(--DarkBlue);
-    font-size:1.4rem;
-  }
 }

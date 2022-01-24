@@ -1,6 +1,6 @@
 (function() {
     // https://dashboard.emailjs.com/admin/integration
-    emailjs.init('user_bK4IJwyAKPRRJw6pPnEwz');
+    emailjs.init('user_xBDYw9IGx8K5dfznAqHYW');
 })();
 
 window.onload = function() {
@@ -9,7 +9,7 @@ window.onload = function() {
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
-        emailjs.sendForm('service_a5xbc34', 'template_i7t1pp1', this)
+        emailjs.sendForm('service_trviw5p', 'template_zllh8uq', this)
             .then(function() {
                 console.log('SUCCESS!');
                 document.getElementById("contact-form").reset();

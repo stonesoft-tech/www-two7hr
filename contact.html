@@ -17,9 +17,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-
-
-
   <!-- Font Awsome -->
   <script src="https://kit.fontawesome.com/8ecd177af7.js" crossorigin="anonymous"></script>
 
@@ -33,6 +30,11 @@
 
   <!-- My CSS -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS Emailer -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -77,6 +79,7 @@
           <p>0333 339 0927</p>
         </div>
         <div class="col-md-6">
+          <h3>Fill in the form to send us a message</h3>
           <form id="contact-form">
             <input type="hidden" name="contact_number">
             <div class="mb-3">
@@ -88,14 +91,14 @@
               <input id="user_email" class="form-control" type="email" name="user_email">
             </div>
             <div class="mb-3">
-              <label for="user_email" class="form-label">Telephone Number</label>
-              <input id="user_email" class="form-control" type="email" name="user_email">
+              <label for="contact_number" class="form-label">Telephone Number</label>
+              <input id="contact_number" class="form-control" type="text" name="contact_number">
             </div>
             <div class="mb-3">
               <label for="user_message" class="form-label">Message</label>
               <textarea rows="5" id="user_message" class="form-control" name="message"></textarea>
             </div>
-            <br>
+            <!-- <br> -->
             <input class="btn-light-pink btn-secondary" type="submit" value="Send">
           </form>
         </div>
@@ -118,7 +121,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="white-section">
+  <footer class="white-section footer-text">
     <div class="container-fluid">
       <h3 class="">HR made easy</h3><br>
       <p>
@@ -134,8 +137,6 @@
 
     </div>
   </footer>
-    <div class="dark-pink-section">DarkPink</div>
-  <div class="light-pink-section">LightPink</div>
 
 </body>
 </html>
