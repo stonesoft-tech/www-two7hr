@@ -9,7 +9,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 h1 {
@@ -56,11 +56,20 @@ label.form-label {
 
 /* Containers */
 .container-fluid {
-  padding: 3% 10%;
+  padding: 5% 15%;
 }
 
 .container-centre {
   margin: 0 15%;
+}
+
+.feature-box-border {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25em;
+}
+
+.feature-box {
+  margin-top: 5%;
 }
 
 /* Header */
@@ -101,21 +110,21 @@ img.logo {
 /* Sections */
 .dark-pink-section,
 .dark-pink-section p {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  /* padding-top: 5%;
+  padding-bottom: 5%; */
   background-color: var(--DarkPink);
   color: #fff;
 }
 
 .light-pink-section,
 .light-pink-section p {
-  padding-top: 5%;
+  /* padding-top: 5%; */
   background-color: var(--LightPink);
   color: var(--DarkBlue);
 }
 
 .white-section {
-  padding-top: 5%;
+  /* padding-top: 5%; */
   background-color: #fff;
   color: var(--DarkPink);
 }
@@ -131,7 +140,7 @@ img.logo {
 }
 
 .about-image-section {
-  padding: 5%;
+  padding: 5% 15%;
   color: var(--DarkBlue);
   background-image: url("../images/emma-claude-about.png");
   background-size: 100%;
@@ -154,13 +163,14 @@ img.logo {
 
 .headline-heading {
   font-weight: 600;
-  padding: 0 3%;
+  padding: 5% 3%;
   /* font-size: 1.2rem; */
 }
 
 .about-heading {
   font-weight: 600;
-  padding-top: 20%;
+  padding-top: 15%;
+  font-size: 1.1rem;
 }
 
 .testimonial-text {
@@ -231,7 +241,7 @@ img.avatar {
   width: 200px;
   height: auto;
   border: 5px solid var(--DarkPink);
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -326,6 +336,21 @@ img.stonesoft-image {
     color: var(--DarkBlue);
     font-size:1.3rem;
   }
+
+  .feature-box-border {
+    border: none;
+
+  }
+
+  .feature-box {
+    margin-top: 0;
+  }
+
+  .about-heading {
+    font-weight: 600;
+    padding-top: 20%;
+    font-size: 1.5rem;
+  }
 }
 
 /* Desktop, iPad Pro and above*/
@@ -356,5 +381,19 @@ img.stonesoft-image {
   h3 {
     color: var(--DarkBlue);
     font-size:1.4rem;
+  }
+
+  .about-heading {
+    font-weight: 600;
+    padding-top: 20%;
+    font-size: 2rem;
+  }
+
+  .feature-box-border {
+    border: none;
+  }
+
+  .feature-box {
+    margin-top: 0;
   }
 }
