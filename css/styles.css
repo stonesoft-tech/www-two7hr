@@ -109,6 +109,7 @@ img.logo {
 
 .light-pink-section,
 .light-pink-section p {
+  padding-top: 5%;
   background-color: var(--LightPink);
   color: var(--DarkBlue);
 }
