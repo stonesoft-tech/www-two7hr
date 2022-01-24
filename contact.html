@@ -37,34 +37,7 @@
 
 <body>
 
-  <!-- Optional JavaScript -->
-  <!-- JS Emailer -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_bK4IJwyAKPRRJw6pPnEwz');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_a5xbc34', 'template_i7t1pp1', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                        document.getElementById("contact-form").reset();
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -89,13 +62,10 @@
       </div>
     </nav>
     </div>
-      <!-- <h2 class="">Contact Us</h2> -->
   </div>
 
-
-  <!-- Features -->
-
-  <section class="medium-pink-section">
+  <!-- Form -->
+  <section class="dark-pink-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 contact-details">
@@ -133,25 +103,24 @@
     </div>
   </section>
 
-
-
-
-  <!-- Call to Action -->
-
-  <!-- <section class="medium-pink-section" id="cta">
-    <div class="container-fluid">
-      <h2 class="">hr made easy</h2>
+  <!-- Modal -->
+  <div class="modal fade" id="thanks" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Thanks!</h5>
+        </div>
+        <div class="modal-body">
+          Your message was sent.
+        </div>
+      </div>
     </div>
-  </section> -->
-
+  </div>
 
   <!-- Footer -->
-
-  <footer class="white-section" id="footer">
+  <footer class="white-section">
     <div class="container-fluid">
-
-
-            <h3 class="">HR made easy</h3><br>
+      <h3 class="">HR made easy</h3><br>
       <p>
         <!-- <i class="footer-icon fab fa-twitter 2x"></i> -->
         <i class="footer-icon fab fa-facebook-f 2x"></i>
@@ -165,8 +134,8 @@
 
     </div>
   </footer>
-
+    <div class="dark-pink-section">DarkPink</div>
+  <div class="light-pink-section">LightPink</div>
 
 </body>
-
 </html>
