@@ -238,7 +238,7 @@ img.service-icons {
 
 img.avatar {
   border-radius: 100%;
-  width: 200px;
+  width: 150px;
   height: auto;
   border: 5px solid var(--DarkPink);
   margin: 20px;
@@ -351,6 +351,15 @@ img.stonesoft-image {
     padding-top: 20%;
     font-size: 1.5rem;
   }
+
+  img.avatar {
+    border-radius: 100%;
+    width: 200px;
+    height: auto;
+    border: 5px solid var(--DarkPink);
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
 }
 
 /* Desktop, iPad Pro and above*/
@@ -395,5 +404,14 @@ img.stonesoft-image {
 
   .feature-box {
     margin-top: 0;
+  }
+
+  img.avatar {
+    border-radius: 100%;
+    width: 200px;
+    height: auto;
+    border: 5px solid var(--DarkPink);
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   }
 }
