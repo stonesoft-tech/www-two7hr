@@ -191,7 +191,7 @@ li {
   background-color: var(--MediumPink);
   color: white;
   border-radius: 5px;
-  padding: 1% 8%;
+  /* padding: 1% 8%; */
   border: 1px solid var(--MediumPink);
   text-decoration: none;
 }
