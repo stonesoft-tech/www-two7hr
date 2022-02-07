@@ -5,6 +5,14 @@
   --DarkBlue: #364b73;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
@@ -32,6 +40,16 @@ h4 {
 
 p {
   color: #8f8f8f;
+}
+
+a.social {
+  color: #8f8f8f;
+    text-decoration: none;
+}
+
+a.social :hover, a.social :focus {
+    color: var(--DarkPink);
+
 }
 
 ul {
